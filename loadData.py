@@ -4,7 +4,7 @@ import pandas
 
 class MyDb():
     def __enter__(self):
-        self.conn=MySQLdb.connect(host="localhost",user="sml",passwd="91004",db='huxiu',charset="utf8")
+        self.conn=MySQLdb.connect(host="192.168.1.5",user="sml",passwd="91004",db='huxiu',charset="utf8")
         return self.conn
 
     def __exit__(self, exc_type, exc_val, exc_tb):
